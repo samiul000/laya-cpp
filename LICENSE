@@ -1,0 +1,22 @@
+MIT License
+
+Copyright (c) 2026 Al Mahmud Samiul
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+... (Standard MIT text) ...
+
+---
+
+Third-Party Notices & Attribution:
+
+1. receptron/laya
+   Repository: https://github.com/receptron/laya
+   License: MIT
+   Copyright (c) 2026 receptron
+
+2. Convai Innovations (Base Laya Architecture & Pretrained Weights)
+   Repository: https://huggingface.co/convaiinnovations/laya
+   License: Apache License 2.0
+   Copyright (c) 2026 Convai Innovations

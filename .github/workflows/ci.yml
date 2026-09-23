@@ -1,0 +1,16 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t laya-cpp-runner .
+      - run: >
+          docker run --rm -v ${{ github.workspace }}:/workspace laya-cpp-runner
+          bash -c 'pip3 install -q huggingface_hub && python3 /workspace/scripts/download_model.py'
+      - run: >
+          docker run --rm -v ${{ github.workspace }}:/workspace laya-cpp-runner
+          bash -c 'cmake -S /workspace/cpp -B /workspace/cpp/build &&
+          cmake --build /workspace/cpp/build -j$(nproc) &&
+          ctest --test-dir /workspace/cpp/build'
