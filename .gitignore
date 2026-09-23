@@ -1,5 +1,7 @@
 models/*.onnx
 models/*.onnx.data
+models/tokenizer/
+models/.cache/
 cpp/build/
 .vscode/
 __pycache__/

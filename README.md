@@ -110,6 +110,7 @@ Over 20 randomized inputs: max logit shift 0.44, `act_probs` identical to 6 deci
 | --------------------------- | --------------------------------------------- |
 | `scripts/test_parity.py`    | Python reference output for C++ parity checks |
 | `scripts/download_model.py` | Fetch ONNX bundle from Hugging Face → models/ |
+| `scripts/tokenize_text.py`  | Raw text → token IDs (needs `pip install tokenizers`) |
 | `scripts/quantize_int8.py`  | FP32 → INT8 dynamic quantization              |
 | `scripts/compare_int8.py`   | FP32 vs INT8 output deviation (fixed seed)    |
 | `scripts/bench_threads.py`  | Latency vs intra-op thread count              |

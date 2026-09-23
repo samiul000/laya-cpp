@@ -10,5 +10,11 @@ dest = sys.argv[2] if len(sys.argv) > 2 else "models"
 print(snapshot_download(
     repo,
     local_dir=dest,
-    allow_patterns=["laya.onnx", "laya.onnx.data", "laya_config.json"],
+    allow_patterns=[
+        "laya.onnx",
+        "laya.onnx.data",
+        "laya_config.json",
+        "tokenizer/tokenizer.json",
+        "tokenizer/tokenizer_config.json",
+    ],
 ))
